@@ -60,7 +60,7 @@ main {
 .card-bedge {
     position: absolute;
     bottom: 1px;
-    background-color: var(--header-bedge-color);
+    background-color: rgba(93, 109, 126 , 0.3);
     padding: 2px;
 }
 
