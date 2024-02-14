@@ -1,7 +1,15 @@
+/* resert */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 :root {
@@ -13,6 +21,8 @@
 ul {
     list-style: none;
 }
+
+/* general */
 
 #app {
     width: 100%;
@@ -27,20 +37,18 @@ header {
     gap: 10px;
 }
 
+.header-bedge {
+    background-color: var(--header-bedge-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 main {
     width: 100%;
     padding: 20px;
     gap: 10px;
     height: calc(100% - 120px);
     overflow-y: auto;
-}
-
-
-.header-bedge {
-    background-color: var(--header-bedge-color);
-    height: 25px;
-    padding: 5px;
-    border-radius: 5px;
 }
 
 .card {
@@ -105,14 +113,27 @@ img {
 .wrap {
     flex-wrap: wrap;
 }
+/* left toolbar */
+
+.left-toolbar {
+    padding: 0 10px;
+}
+
+/* center toolbar */
 
 .share {
     color: green;
 }
 
+/* right toolbar */
+
 .end-meeting {
     color: red;
+}
+
+.right-toolbar {
     background-color: var(--header-bedge-color);
     height: 100%;
-    display: inline-block;
+    line-height: 70px;
+    padding: 0 5px;
 }
